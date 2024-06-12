@@ -30,7 +30,7 @@ qa_chain = RetrievalQA.from_chain_type(llm=OpenAI(),
 # Main route
 @app.route('/')
 def main():
-    return 'You are in the main route!'
+    return 'Health check!'
 
 # ask chatbot endpoint
 @app.route('/ask', methods=['POST'])
